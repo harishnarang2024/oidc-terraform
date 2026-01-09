@@ -43,7 +43,7 @@ jobs:
         run: | 
           terraform init -input=false \
             -backend-config="bucket=maasheru" \
-            -backend-config="key=eks1/github-actions/terraform.tfstate" \
+            -backend-config="key=eks2/github-actions/terraform.tfstate" \
             -backend-config="region=us-east-1"
 
       - name: Terraform Validate
